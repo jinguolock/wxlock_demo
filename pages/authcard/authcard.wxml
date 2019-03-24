@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="login">
+    <!--view class="logo">
+      <image src="../../images/logo.png"></image>
+    </view-->
+
+
+    <form bindsubmit="lock_card_auth">
+
+      <view class="section">
+        <view class="section" style='margin-top: 60px;'>
+          <picker bindchange="bindPickerChange_apartment" value="{{index_auth}}" range-key="local" range="{{findList}}">
+            <view class="picker">
+              {{findList[index_auth].local}}
+            </view>
+          </picker>
+        </view>
+        <input name="cardId" style='margin-top: 20px;width:300px' value="F406CB26" class="login-txt" auto-focus placeholder="卡号" />
+        <input name="endtime" class="login-txt" value='2018-08-01 00:00:00' auto-focus placeholder="结束时间(格式：2018-01-01 00:00:00)" />
+
+        <checkbox-group name="same" bindchange="checkboxChange">
+          <label class="checkbox">
+            <checkbox value="1" />与当前授权时间一致</label>
+        </checkbox-group>
+      </view>
+
+      <view class="section">
+        <view class="btn-area">
+          <button style='margin-top: 10px;' class="login-btn" form-type="submit">授权</button>
+        </view>
+      </view>
+
+    </form>
+  </view>
+  <view style='margin-top: 20px;'>
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

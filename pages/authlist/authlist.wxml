@@ -1,0 +1,26 @@
+<view class="container">
+
+  <view class="find-list" wx:for="{{findList}}" wx:key="{{index}}" wx:for-item="items">
+  <view class="find-items">
+      <!--text >小区:楼号:房间</text-->
+      <text >ID:{{items.NodeId}}</text>
+      <!--text class="font-type-1">{{items.NodeId}}</text-->
+    </view>
+    <!--view class="find-items"-->
+      <!--image src="../../images/icon_find_car@2x.png" mode="scollFill center" class="find-icon"></image-->
+      <!--text class="series">有效时间：</text>
+      <text class="find-type">{{items.start}}--{{items.end}}</text>
+    </view-->
+    
+    
+    <view class="find-items">
+      <!--text wx:if="{{items.earnest_money > 0}}" class="earnest-money">己冻结诚意金{{items.earnest_money}}元</text-->
+      <button data-aid="{{items.NodeId}}" bindtap="configthedoor" class="open-button" type='primary'>配置 </button>
+      <button data-aid="{{items.NodeId}}" bindtap="syncdoor" class="open-button">同步 </button>
+      <button data-aid="{{items.NodeId}}" bindtap="addlockfiger" class="open-button">添加指纹 </button>
+      <button data-aid="{{items.NodeId}}" bindtap="addlockcard" class="open-button">添加卡 </button>
+       <!--button  class="earnest-money" type='warn'>授权卡 </button-->
+       <text  class="earnest-money">{{motto[items.NodeId]}}</text>
+    </view>
+  </view>
+</view>

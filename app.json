@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lclock/lclock",
+    "pages/authlist/authlist",
+    "pages/authapp/authapp",
+    "pages/authcard/authcard",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/cardlist/cardlist",
+    "pages/figerlist/figerlist",
+    "pages/addcard/addcard",
+    "pages/addfiger/addfiger",
+    "pages/locklist/locklist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "IS智能锁",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a0a0a0",
+    "selectedColor": "#ec5c30",
+    "backgroundColor": "#f2f2f2",
+    "borderStyle": "white",
+    
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab_home_def@2x.png",
+        "selectedIconPath": "images/tab_home_sel@2x.png"
+      },
+      {
+        "pagePath": "pages/lclock/lclock",
+        "text": "开门",
+        "iconPath": "images/tab_home_def@2x.png",
+        "selectedIconPath": "images/tab_home_sel@2x.png"
+      },
+      {
+        "pagePath": "pages/authlist/authlist",
+        "text": "配置",
+        "iconPath": "images/tab_home_def@2x.png",
+        "selectedIconPath": "images/tab_home_sel@2x.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "images/tab_user_def@2x.png",
+        "selectedIconPath": "images/tab_user_sel@2x.png"
+      }
+    ]
+  }
+}

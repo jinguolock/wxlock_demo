@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="login">
+    <!--view class="logo">
+      <image src="../../images/logo.png"></image>
+    </view-->
+
+
+    <form bindsubmit="lock_register">
+    
+  <view class="section">
+    <input style='margin-top: 60px; width:300px' name="phone" auto-focus class="login-txt"  placeholder="输入手机号" auto-focus/>
+    <input password='true'  class="login-txt" name="pwd" placeholder="输入密码"/>
+    <input password='true'  class="login-txt" name="repwd" placeholder="再次输入密码"/>
+    <input name="username"  class="login-txt" auto-focus placeholder="用户名" />
+    <input name="name"  class="login-txt" auto-focus placeholder="姓名" />
+    <input name="email"  class="login-txt" auto-focus placeholder="email" />
+    <input name="address"  class="login-txt" auto-focus placeholder="地址" />
+    <input name="idsn"  class="login-txt" auto-focus placeholder="身份证号" />
+  </view>
+  <view class="section">
+    <view class="btn-area">
+      <button style='margin-top: 10px;' class="login-btn" form-type="submit">注册</button>
+    </view>
+  </view>
+  
+</form>
+  </view>
+</view>

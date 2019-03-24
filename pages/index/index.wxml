@@ -1,0 +1,85 @@
+<view class="home-wrap">
+  <swiper indicator-dots="true" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+    <view wx:for="{{banner}}" wx:key="unique">
+      <swiper-item>
+        <view>
+          <navigator url="{{item.target}}"><image src="http://api.sagewont.cn/islocking/my/img/lock1.jpg" mode="scaleToFill center" class="banner"></image></navigator>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view>
+          <navigator url="{{item.target}}"><image src="http://api.sagewont.cn/islocking/my/img/lock2.jpg" mode="scaleToFill center" class="banner"></image></navigator>
+        </view>
+      </swiper-item>
+    </view>
+  </swiper>
+  <view class="scroll-txt">
+    <text class="scroll-ads"></text>
+  </view>
+  <!--view class="ads-list">
+    <view class="ads-item" wx:for="{{advertise}}" wx:key="unique" wx:for-item="item">
+      <image src="{{item.image}}" mode="scaleToFill center" class="sub-banner"></image>
+    </view>
+  </view-->
+  <view class="{{istype==1?'workbench':'myhide'}}">
+    <text class="title">房主控制台</text>
+    <view class="list">
+      <view class="items">
+        <image src="../../images/desk_publish@2x.png"></image>
+        <text>我的公寓</text>
+      </view>
+      <view class="items">
+        <image src="../../images/desk_bid@2x.png"></image>
+        <text>我的客户</text>
+      </view>
+      <view class="items">
+        <image src="../../images/desk_order@2x.png"></image>
+        <text>卡片授权</text>
+      </view>
+      <view class="items">
+        <image src="../../images/desk_massage@2x.png"></image>
+        <text>我的消息</text>
+      </view>
+    </view>
+  </view>
+  <view class="{{istype==2?'workbench':'myhide'}}">
+    <text class="title">客户服务</text>
+    <view class="list">
+      <view class="items">
+        <image src="../../images/home_car_source@2x.png" class="service-icon"></image>
+        <text>指纹录入</text>
+      </view>
+      <view bindtap="toAuthCard" class="items">
+        <image src="../../images/home_logistical@2x.png" class="service-icon"></image>
+        <text>卡片授权</text>
+      </view>
+      <view bindtap="toAuthApp" class="items">
+        <image src="../../images/home_finance@2x.png" class="service-icon"></image>
+        <text>应用授权</text>
+      </view>
+      <view bindtap="toConfigList" class="items">
+        <image src="../../images/home_headlines@2x.png" class="service-icon"></image>
+        <text>配置信息</text>
+      </view>
+    </view>
+  </view>
+  <view class="{{istype==3?'workbench':'myhide'}}">
+    <text class="title">配置</text>
+    <view class="list">
+      <view bindtap="tofigerlist" class="items">
+        <image src="../../images/home_car_source@2x.png" class="service-icon"></image>
+        <text>指纹列表</text>
+      </view>
+      <view bindtap="tocardlist" class="items">
+        <image src="../../images/home_logistical@2x.png" class="service-icon"></image>
+        <text>卡列表</text>
+      </view>
+      <view bindtap="tolocklist" class="items">
+        <image src="../../images/home_logistical@2x.png" class="service-icon"></image>
+        <text>门锁列表</text>
+      </view>
+    </view>
+    <view class="list">
+    </view>
+  </view>
+</view>

@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="find-list">
+    <view class="find-items">
+      <!--image src="../../images/icon_find_car@2x.png" mode="scollFill center" class="find-icon"></image-->
+      <text class="series">用户名</text>
+      <text  class="find-type">{{lock_username}}</text>
+    </view>
+    <view class="find-items">
+      <text class="font-type">电话</text>
+      <text class="font-type-1">{{lock_phone}}</text>
+    </view>
+    <view class="find-items">
+      <view class="font-type">
+        <text  class="channel">姓名</text>
+      </view>
+      <view class="font-type-1">
+        <text>{{lock_name}}</text>
+      </view>
+    </view>
+    <view class="find-items">
+      <view class="font-type">
+        <text  class="channel">身份证号码</text>
+      </view>
+      <view class="font-type-1">
+        <text>{{lock_idsn}}</text>
+      </view>
+    </view>
+    <view class="find-items">
+      <view class="font-type">
+        <text  class="channel">邮箱</text>
+      </view>
+      <view class="font-type-1">
+        <text>{{lock_email}}</text>
+      </view>
+    </view>
+    <view class="find-items">
+      <view class="font-type">
+        <text  class="channel">类型</text>
+      </view>
+      <view class="font-type-1">
+        <text>{{lock_type}}</text>
+      </view>
+    </view>
+    <view class="find-items">
+     <view class="font-type">
+        <text  class="channel">地址</text>
+      </view>
+      <view class="font-type-1">
+        <text>{{lock_address}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view  style='margin-top: 20px;'>
+      <button  type="warn" bindtap="relogin"> 重新登陆 </button>
+    </view>
+</view>

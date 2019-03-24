@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="login">
+    <!--view class="logo">
+      <image src="../../images/logo.png"></image>
+    </view-->
+
+
+    <form bindsubmit="auth_app_submit">
+    
+  <view class="section">
+   <view class="section" style='margin-top: 60px;'>
+    <picker bindchange="bindPickerChange_apartment" value="{{index_auth}}" range-key="local" range="{{findList}}">
+    <view class="picker">
+      {{findList[index_auth].local}}
+    </view>
+  </picker>
+  </view>
+    <input name="phone"  style='margin-top: 20px;width:300px'  class="login-txt" auto-focus placeholder="手机号" />
+    <input name="starttime"  class="login-txt" auto-focus placeholder="开始时间(格式：2018-01-01_00:00:00)" />
+    <input name="endtime"  class="login-txt" auto-focus placeholder="结束时间(格式：2018-01-01_00:00:00)" />
+
+     <checkbox-group name="same" bindchange="checkboxChange">
+      <label class="checkbox"><checkbox value="1"/>与当前授权时间一致</label>
+      </checkbox-group>
+  </view>
+
+  <view class="section">
+    <view class="btn-area">
+      <button style='margin-top: 10px;' class="login-btn" form-type="submit">授权</button>
+    </view>
+  </view>
+  
+</form>
+  </view>
+</view>

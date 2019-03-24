@@ -1,0 +1,64 @@
+
+
+.textStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  margin-top: 200px;
+}
+.container {
+  display: flex;
+  height: 100%;
+  font-size: 28rpx;
+}
+
+.find-list{
+  background: #fff; 
+  margin-top: 2rpx;
+  width: 100%; 
+  /*border-top: 1px #f1f1f1 solid;*/
+  /*border-bottom: 1px #c2c2c2 solid;*/
+}
+.find-items{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  margin-bottom: 30rpx;
+  flex-direction: row;
+  position: relative;
+}
+.find-icon{
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-right: 10rpx;
+}
+.series{
+  padding-top: 5rpx;
+}
+.find-type{
+  padding-top: 5rpx;
+  position: absolute;
+  right:0;
+  text-align: right;
+}
+
+.font-type-1{
+  position: absolute;
+  right:0;
+  text-align: right;
+}
+.channel{
+  margin-right: 10rpx;
+}
+.earnest-money{
+  color:#ec5c30;
+  font-size: 28rpx;
+}
+.open-button{
+  font-size: 24rpx;
+  margin-left: 2rpx;
+}
