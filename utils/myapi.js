@@ -1,6 +1,6 @@
 let myApi = {
   server: {
-    url: "https://127.0.0.1/islocking/wx"
+    url: "https://api.sagewont.cn/islocking/wx"
   },
   test1(callback) {
     var _this = this;
